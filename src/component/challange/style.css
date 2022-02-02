@@ -1,0 +1,79 @@
+.challange-right, .challange-left{
+    width: 100%;
+    height: auto;
+    padding: 5rem 10rem;
+    display: flex;
+}
+.challange-left{
+    flex-direction: row-reverse;
+    /* background-color: #dbe8f7; */
+
+}
+    .challage-div-left, .challage-div-right{
+        width: 50%;
+        height: 100%;
+    }
+    .challage-div-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .challage-div-left img{
+            width: auto;
+            height: 100%;
+            background-size: cover;
+        }
+    
+        .challage-div-right h2{
+            font-size: 36px;
+            font-family: 'Merriweather', serif;
+            color: #CD061D;
+        }
+        .challage-div-right h3{
+            font-size: 18px;
+            font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+            color: #414141;
+            font-weight: 400;
+            margin-top: 1rem;
+        }
+
+        .inactive, .active-div{
+            width: 100%;
+            height: 5rem;
+            background-color: #E8E8E8;
+            border-radius: 1rem;
+            margin-top: 1.5rem;
+            border: 1px solid #d1d1d1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            cursor: pointer;
+        }
+        .active-div{
+            background-color: transparent;
+        }
+            .inactive-left-div, .active-left-div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+                .title-name, .date-mentioned{
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+                }
+                .title-name{
+                    font-weight: 600;
+                    color: #636363;
+                }
+                .date-mentioned{
+                    color: #919191;
+                    font-size: 14px;
+                }
+            .active-div span, .inactive span{
+                font-size: 28px;
+                margin-top: 10px;
+            }
+            
