@@ -20,10 +20,10 @@
             margin-top: 1rem;
             font-size: 5rem;
             font-family: 'Merriweather', serif;
-            color: #141b44;
+            color: #144184;
         }
         .event-heading-left-div label{
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-family: 'IBM Plex Sans Thai Looped', sans-serif;
             color: #282d49;
         }
@@ -36,17 +36,17 @@
             font-family: 'IBM Plex Sans Thai Looped', sans-serif;
             border: none;
             outline: none;
-            background-color: #179ce4;
-            border: 1px solid #179be2;
+            background-color: #FF9C01;
+            border: 1px solid #FF9C01;
             border-radius: 0.3rem;
             cursor: pointer;
             text-decoration: none;
-            color: #000000;
+            color: #144184;
             text-align: center;
             line-height: 3rem;
         }
         .event-btn:hover{
-            box-shadow: 1px 1px 6px #179be27e;
+            box-shadow: 1px 1px 6px #3c2602;
             color: #ffffff;
         }
 

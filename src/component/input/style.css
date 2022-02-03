@@ -19,3 +19,35 @@
         padding-left: 1rem;
         font-size: 1rem;
     }
+
+
+    .user-select-input{
+        width: 100%;
+        height: 2.5rem;
+        outline: none;
+        border: 1px solid #d0d5e6;
+        border-radius: 0.3rem;
+        padding-left: 1rem;
+        font-size: 1rem;
+        padding-right: 1rem !important;
+        background: transparent;
+    }
+
+    .user-input-textarea{
+        width: 100%;
+        outline: none;
+        border: 1px solid #d0d5e6;
+        border-radius: 0.3rem;
+        padding-left: 1rem;
+        font-size: 1rem;
+        padding-right: 1rem !important;
+        background: transparent;
+        color: #26272b;
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    }
+
+
+    textarea{
+        resize:vertical;
+        padding: 1rem;
+    }
