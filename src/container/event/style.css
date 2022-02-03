@@ -1,6 +1,6 @@
 .event-main-div{
     width: 100%;
-    height: 90vh;
+    height: auto;
 }
 
 .event-heading{
@@ -46,7 +46,7 @@
             line-height: 3rem;
         }
         .event-btn:hover{
-            box-shadow: 1px 1px 6px #3c2602;
+            box-shadow: 3px 4px 5px #d1d1d1;
             color: #ffffff;
         }
 
@@ -101,3 +101,24 @@
             margin-right: -1rem;
         }
 
+
+.footer{
+    width: 100%;
+    height: 2rem;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer label{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: 1rem;
+    color: #656772;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.footer label span{
+    color: #144184;
+}

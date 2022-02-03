@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path='/' exact element={<Event/>}/>   {/* Syntex in react-router-dom updated versions */}
         <Route path='/booking' element={<Booking/>}/>
-        <Route path='/payment' element={<Payment/>}/>
+        <Route path='/payment/:finalData' element={<Payment/>}/>
       </Routes>
     </div>
   );

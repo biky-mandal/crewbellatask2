@@ -20,8 +20,8 @@ const Challange = (props) => {
                             return(
                                 <div className='active-div'>
                                     <div className='active-left-div'>
-                                        <label className='title-name'>{c.title}</label>
-                                        <label className='date-mentioned'>{c.date}</label>
+                                        <label className='a-title-name'>{c.title}</label>
+                                        <label className='a-date-mentioned'>{c.date}</label>
                                     </div>
                                     <span><FiChevronRight /></span>
                                 </div>
@@ -30,8 +30,8 @@ const Challange = (props) => {
                             return(
                                 <div className='inactive'>
                                     <div className='inactive-left-div'>
-                                        <label className='title-name'>{c.title}</label>
-                                        <label className='date-mentioned'>{c.date}</label>
+                                        <label className='i-title-name'>{c.title}</label>
+                                        <label className='i-date-mentioned'>{c.date}</label>
                                     </div>
                                     <span><FiCheck /></span>
                                 </div>

@@ -48,10 +48,15 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 1rem;
-            cursor: pointer;
+            cursor:not-allowed;
+            transition: all 0.1s;
+        }
+        .active-div:hover{
+            box-shadow: 3px 4px 5px #d1d1d1;
         }
         .active-div{
             background-color: transparent;
+            cursor: pointer;
         }
             .inactive-left-div, .active-left-div{
                 display: flex;
@@ -59,16 +64,19 @@
                 justify-content: center;
                 align-items: flex-start;
             }
-                .title-name, .date-mentioned{
-                    cursor: pointer;
+                .a-title-name, .a-date-mentioned, .i-title-name, .i-date-mentioned{
+                    cursor: not-allowed;
                     font-size: 16px;
                     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
                 }
-                .title-name{
+                .a-title-name, .a-date-mentioned{
+                    cursor: pointer;
+                }
+                .a-title-name, .i-title-name{
                     font-weight: 600;
                     color: #636363;
                 }
-                .date-mentioned{
+                .a-date-mentioned, .i-date-mentioned{
                     color: #919191;
                     font-size: 14px;
                 }

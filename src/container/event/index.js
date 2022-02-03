@@ -64,6 +64,10 @@ const Event = (props) => {
                     <div>Loading...</div>
                 }
             </div>
+
+            <div className='footer'>
+                <label>Developed by <span>BIKY MANDAL</span></label>
+            </div>
         </>
     );
 }

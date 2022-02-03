@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import './style.css';
 
 export const InputBox = (props) => {
+
     return(
         <div className='user-input-div'>
             <label>{props.title}</label>
             <input 
+                name={props.name}
                 className='user-input'
                 type='text'
-                
+                onChange={(e) => props.getData(props.name, e.target.value)}
+                placeholder={props.placeholder}
             />
         </div>
     )
@@ -16,17 +19,14 @@ export const InputBox = (props) => {
 
 export const SelectBoxCountry = (props) => {
 
-    const [country, setCountry] = useState();
-
-    console.log(country);
     return(
         <div className='user-input-div'>
-            <label>Visibility to audience ?</label>
+            <label>Country</label>
             <select 
+                name={props.name}
                 className='user-select-input'
                 type='select'
-                value={country}
-                onChange={(e) => setCountry(e.target.value)}
+                onChange={(e) => props.getData(props.name, e.target.value)}
             >
                 {
                     props.data.map(c => {
@@ -42,9 +42,8 @@ export const SelectBoxCountry = (props) => {
         </div>
     )
 }
-export const SelectBox = () => {
+export const SelectBox = (props) => {
 
-    const [visibility, setVisibility] = useState();
 
     return(
         <div className='user-input-div'>
@@ -52,8 +51,8 @@ export const SelectBox = () => {
             <select 
                 className='user-select-input'
                 type='select'
-                value={visibility}
-                onChange={(e) => setVisibility(e.target.value)}
+                name={props.name}
+                onChange={(e) => props.getData(props.name, e.target.value)}
             >
                 <option>Select Visibility</option>
                 <option value='public'>Keep it Public</option>
@@ -72,6 +71,8 @@ export const DescriptionBox = (props) => {
                 className='user-input-textarea'
                 type='text'
                 rows='4'
+                placeholder={props.placeholder}
+                onChange={(e) => props.getData(props.name, e.target.value)}
             />
         </div>
     )
